@@ -1,0 +1,15 @@
+ # 1.Write a program to count the number of upper and lower case letters in a String.
+
+s = input("Enter a string: ")
+
+upper = 0
+lower = 0
+
+for ch in s:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
+
+print("Uppercase letters:", upper)
+print("Lowercase letters:", lower)
